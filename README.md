@@ -12,7 +12,7 @@ This programm convert text to MAC-style.
 **********
 <b>out_file1.txt:</b>
 **********
-<p>text_before_mac 24A921418907 text_after_mac</p>
-<p>text_before_mac 24A92141891D text_after_mac</p>
-<p>text_before_mac 24A9214189F4 text_after_mac</p>
+<p>text_before_mac 24:A9:21:41:89:07 text_after_mac</p>
+<p>text_before_mac 24:A9:21:41:89:1D text_after_mac</p>
+<p>text_before_mac 24:A9:21:41:89:F4 text_after_mac</p>
 **********
