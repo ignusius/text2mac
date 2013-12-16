@@ -18,7 +18,7 @@ This program convert text to MAC-style.
 **********
 <h3>Options:</h3>
 <p>text2mac f1.txt f2.txt 'text ' ' text' [upper,lower] [2,3],[:,.]</p>
-<p>example: text2mac f1.txt f2.txt 'text ' ' text' lower 3 .</p>
+<b>example: text2mac f1.txt f2.txt 'text ' ' text' lower 3 .</b>
 *********
 <b>f2.txt</b>
 <p>text 24a.921.418.907 text</p>
