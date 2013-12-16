@@ -1,6 +1,6 @@
 <h1>TEXT2MAC</h1>
 
-This programm convert text to MAC-style.
+This program convert text to MAC-style.
 
 <b>example command: text2mac file1.txt out_file.txt 'text_before_mac ' ' text_after_mac'</b>
 
