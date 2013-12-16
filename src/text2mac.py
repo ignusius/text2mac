@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 __author__ = "Komarov Alexander"
-__version__ = "1.0"
+__version__ = "1.1.2"
 __license__ = "GPL"
 __email__ = "ignusius@gmail.com"
 
