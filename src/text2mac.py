@@ -53,10 +53,18 @@ def help():
               "**********\n"
               "out_file1.txt:\n"
               "**********\n"
-              "text_before_mac 24A921418907 text_after_mac\n"
-              "text_before_mac 24A92141891D text_after_mac\n"
-              "text_before_mac 24A9214189F4 text_after_mac\n"
-              "**********\n")
+              "text_before_mac 24:A9:21:41:89:07 text_after_mac\n"
+              "text_before_mac 24:A9:21:41:89:1D text_after_mac\n"
+              "text_before_mac 24:A9:21:41:89:F4 text_after_mac\n"
+              "**********\n"
+              "Options:\n"
+              "text2mac f1.txt f2.txt 'text ' ' text' [upper,lower] [2,3],[:,.]\n"
+              "example: text2mac f1.txt f2.txt 'text ' ' text' lower 3 .\n"
+              "*********\n"
+              "f2.txt\n"
+              "text 24a.921.418.907 text\n"
+              "text 24a.921.418.91d text\n"
+              "text 24a.921.418.9f4 text\n")
 
 if __name__ == '__main__':
     try:
