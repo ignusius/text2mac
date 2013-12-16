@@ -42,9 +42,9 @@ def convert(file,out_file,before="",after=""):
             f.write(line)
 def help():
     print("TEXT2MAC HELP\n"
-              "-------------------------------------------------------------------------------------\n"
-              "example command: text2mac file1.txt out_file.txt 'text_before_mac ' ' text_after_mac'\n"
-              "-------------------------------------------------------------------------------------\n"
+              "--------------------------------------\n"
+              "example command: text2mac file1.txt\n"
+              "--------------------------------------\n"
               "file1.txt:\n"
               "**********\n"
               "24A921418907\n"
@@ -53,18 +53,18 @@ def help():
               "**********\n"
               "out_file1.txt:\n"
               "**********\n"
-              "text_before_mac 24:A9:21:41:89:07 text_after_mac\n"
-              "text_before_mac 24:A9:21:41:89:1D text_after_mac\n"
-              "text_before_mac 24:A9:21:41:89:F4 text_after_mac\n"
+              "24:A9:21:41:89:07\n"
+              "24:A9:21:41:89:1D\n"
+              "24:A9:21:41:89:F4\n"
               "**********\n"
               "Options:\n"
-              "text2mac f1.txt f2.txt 'text ' ' text' [upper,lower] [2,3],[:,.]\n"
-              "example: text2mac f1.txt f2.txt 'text ' ' text' lower 3 .\n"
+              "text2mac f1.txt f2.txt [upper,lower] [2,3],[:,.] 'text ' ' text'\n"
+              "example: text2mac f1.txt f2.txt  lower 3 . 'text1 ' ' text2'\n"
               "*********\n"
               "f2.txt\n"
-              "text 24a.921.418.907 text\n"
-              "text 24a.921.418.91d text\n"
-              "text 24a.921.418.9f4 text\n")
+              "text1 24a.921.418.907 text2\n"
+              "text1 24a.921.418.91d text2\n"
+              "text1 24a.921.418.9f4 text2\n")
 
 if __name__ == '__main__':
     try:
