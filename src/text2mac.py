@@ -22,34 +22,26 @@ __email__ = "ignusius@gmail.com"
 """
 
 from sys import argv
-
-
+joinnum=3
+join=""
+chars=""
 def convert(file,out_file,before="",after=""):
     macs=""
     try:
         with open(file,'r') as f:
             for line in f:
-                macs+=before+':'.join([line[i:i+2] for i in range(0, len(line), 2)])[:-2]+after+'\n'
+                if chars=="lower":
+                    macs+=before+join.join([line[i:i+joinnum] for i in range(0, len(line), joinnum)]).lower()[:-2]+after+'\n'
+                if chars=="upper":
+                    macs+=before+join.join([line[i:i+joinnum] for i in range(0, len(line), joinnum)]).upper()[:-2]+after+'\n'
     except(FileNotFoundError):
         print("No such file or directory")
 
     with open(out_file,'w') as f:
         for line in macs:
             f.write(line)
-
-if __name__ == '__main__':
-    try:
-        after=argv[3]
-    except:
-        after=""
-    try:
-        before=argv[4]
-    except:
-        before=""
-    if len(argv)>2:
-        convert(argv[1],argv[2],after,before)
-    else:
-        print("TEXT2MAC HELP\n"
+def help():
+    print("TEXT2MAC HELP\n"
               "-------------------------------------------------------------------------------------\n"
               "example command: text2mac file1.txt out_file.txt 'text_before_mac ' ' text_after_mac'\n"
               "-------------------------------------------------------------------------------------\n"
@@ -65,6 +57,35 @@ if __name__ == '__main__':
               "text_before_mac 24A92141891D text_after_mac\n"
               "text_before_mac 24A9214189F4 text_after_mac\n"
               "**********\n")
+
+if __name__ == '__main__':
+    try:
+        after=argv[4]
+    except:
+        after=""
+    try:
+        before=argv[5]
+    except:
+        before=""
+
+    try:
+        chars=argv[3]
+    except:
+        chars="lower"
+
+    try:
+        joinnum=int(argv[6])
+    except:
+        joinnum=2
+    try:
+        join=argv[7]
+    except:
+        join=":"
+
+    if len(argv)>2:
+        convert(argv[1],argv[2],after,before)
+    else:
+        help()
 
 
 
