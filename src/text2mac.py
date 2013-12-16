@@ -68,11 +68,11 @@ def help():
 
 if __name__ == '__main__':
     try:
-        after=argv[4]
+        after=argv[6]
     except:
         after=""
     try:
-        before=argv[5]
+        before=argv[7]
     except:
         before=""
 
@@ -82,11 +82,11 @@ if __name__ == '__main__':
         chars="lower"
 
     try:
-        joinnum=int(argv[6])
+        joinnum=int(argv[4])
     except:
         joinnum=2
     try:
-        join=argv[7]
+        join=argv[5]
     except:
         join=":"
 
